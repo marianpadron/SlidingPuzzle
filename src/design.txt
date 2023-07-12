@@ -1,0 +1,17 @@
+CS 5001
+Fall 2022
+Marian Padron
+Final Project (design.txt)
+
+This program was developped using object oriented design patterns and utlizied Turtle as for all graphics and user interface. The game is run through the main() function located in the puzzle_game.py file. The game is an instance of the SliderPuzzleGame class which holds all functionality in terms of gameplay. The SliderPuzzleGame class utilizes files reading classes such as PuzzleFileReader and LeaderboardFileReader and employs methods from the gameboard module to create and change the board.
+
+The files included in my final project and their main functionality provided below:
+
+    - gameboard.py : This module holds functions needed to create and show the items in the board, it 'sets up' the board. Its purpose is simply to create the visuals, it does not provide any functionality in terms of the user's interactions with the game (meaning the module does not move or alter aspects of the board, it only creates them). The functions return the Turtle object that was used to create a certain aspect of the board, this is so that when a function is called, the Turtle object returned can be used by another function to move or alter an aspect of the board.
+
+    - file_reading_classes.py: This file contains the classes PuzzleFileReader, and LeaderboardFileReader. PuzzleFileReader is in charge of accessing the puzzle ‘.puz’ file passed and creating different attributes for the puzzle object. The main attributes are the number of tiles in the puzzle, the image size of the tiles, and the file names of the thumbnail and puzzle images. The class creates two lists, one containing the ordered list of image files, and a randomized (or shuffled) list of the image tiles. LeaderboardFileReader is in charge of accessing the leaderboard.txt file and reading the players and the scores. As attributes, it creates a list that contains nested lists of the players and their scores,  and a boolean that shows whether a leaderboard file was actually found.
+
+    - slider_puzzle_game_class.py: This file contains all the main components of the Slider Puzzle game within a class. By simply creating a SliderPuzzleGame object one is able to create a fully functional game. The class inherits from the Turtle class and uses the PuzzleFileReader class and LeaderboardFileReader class to get the necessary variables and objects for its methods and attributes. The game also calls on functions from the gameboard.py module in order to create and store the turtle objects that run the game. The class' main functionality (creating game tiles and swapping them) works as follows:
+		From the puzzle object created from PuzzleFileReader, the SliderPuzzleGame instance takes a list of sorted or unsorted images file names. For each image file a Turtle object will be created and moved to the correct location on the board. That turtle object and its current coordinates will be then appended to a turtles list and a turtle_locations list. All three lists (placed_images_list, turtles, and turtle_locations) will have the corresponding image file, turtle object, and turtle coordinates at the same list index. By having the same index between the three lists, the 	blank tile and its turtle can be located and swapped with that of the image tile.
+
+    - puzzle_game.py: Holds the main() function for the game. It creates a SliderPuzzleGame object and calls its methods in correct order to get a functioning game.
