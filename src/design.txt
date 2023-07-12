@@ -3,7 +3,7 @@ Fall 2022
 Marian Padron
 Final Project (design.txt)
 
-This program was developed using object-oriented design patterns and utilized Turtle as for all graphics and user
+This program was developed using object-oriented design patterns and utilized Turtle for all graphics and user
 interface. The game is run through the main() function located in the puzzle_game.py file. The game is an instance of
 the SliderPuzzleGame class which holds all functionality in terms of gameplay. The SliderPuzzleGame class utilizes files
 reading classes such as PuzzleFileReader and LeaderboardFileReader and employs methods from the gameboard module to create
