@@ -5,6 +5,7 @@ This game was developed as a final project for an intensive foundations of compu
 <p align="center">
 <img title="Game Preview" src="game_preview.png" width="50%">
 </p>
+
 Game play functionality and design were completed following a detailed rubric, and the error handling employed by the program is based on the testing requirements expected from my instructor. A more 
 thorough description of the game's design can be found in [design.txt](/src/design.txt).
 
