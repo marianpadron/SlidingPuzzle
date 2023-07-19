@@ -1,6 +1,6 @@
 ## Sliding Puzzle Game
 A **PYTHON** run combination puzzle where a player must slide pieces vertically or horizontally on a board to establish an end result that matches a solution.
-This game was developed as a final project for an intensive foundations of computer science class, and so it follows **OBJECT-ORIENTED DESIGN** protocols through the use of classes and objects.
+This game was developed as a final project for an intensive foundations of computer science class, and so it follows **OBJECT-ORIENTED DESIGN** protocols through the use of classes and objects. 
 
 <p align="center">
 <img title="Game Preview" src="game_preview.png" width="50%">
